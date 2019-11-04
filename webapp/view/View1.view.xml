@@ -1,9 +1,16 @@
-<mvc:View controllerName="valuedialog.valuedialog.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-	<Shell id="shell">
+<mvc:View controllerName="valuedialog.valuedialog.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:core="sap.ui.core" displayBlock="true">
+		<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
+				<Page id="page">
+					<content>
+						<InputListItem label="City" id="item0">
+							<content>
+						        <Input ariaLabelledBy="__item2-label" id="input1" showValueHelp="true" valueHelpRequest="onValueHelp" valueHelpOnly="true"/>
+						    </content>
+						</InputListItem>
+					</content>
 				</Page>
 			</pages>
 		</App>
